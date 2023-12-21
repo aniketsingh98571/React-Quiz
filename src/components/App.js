@@ -10,6 +10,7 @@ import Progress from "./Progress";
 import FinishedScreen from "./FinishedScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
+import questions from '../../data/questions.json'
 const initialState={
   questions:[],
   status:'loading',
@@ -53,10 +54,10 @@ function App() {
   },[])
   const fetchQuestions=async()=>{
     try{
-    const data=await fetch("http://localhost:8000/questions")
-    const results=await data.json()
-    console.log(results)
-    dispatch({type:"dataReceived",payload:results})
+    // const data=await fetch("http://localhost:8000/questions")
+    // const results=await data.json()
+    // console.log(results)
+    dispatch({type:"dataReceived",payload:questions})
     }
     catch(err){
       dispatch({type:"dataFailed"})

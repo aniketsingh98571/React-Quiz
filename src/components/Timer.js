@@ -11,7 +11,7 @@ export default function Timer({dispatch,secondsRemaining}){
         },1000)
         return ()=>{clearInterval(timer)}
     },
-    [])
+    [dispatch])
     return (
         <div className="timer">{minutes<1?"0":minutes}:{seconds}</div>
     )
