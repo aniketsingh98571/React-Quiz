@@ -10,7 +10,7 @@ import Progress from "./Progress";
 import FinishedScreen from "./FinishedScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
-import questions from '../../data/questions.json'
+import questions from '../data/questions.json'
 const initialState={
   questions:[],
   status:'loading',
