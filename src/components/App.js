@@ -57,7 +57,7 @@ function App() {
     // const data=await fetch("http://localhost:8000/questions")
     // const results=await data.json()
     // console.log(results)
-    dispatch({type:"dataReceived",payload:questionsData})
+    dispatch({type:"dataReceived",payload:questionsData.questions})
     }
     catch(err){
       dispatch({type:"dataFailed"})
