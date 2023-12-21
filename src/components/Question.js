@@ -1,4 +1,4 @@
-import Options from "./components/Options"
+import Options from "./Options"
 export default function Question({question,dispatch,answer}){
     return (
        <> 
